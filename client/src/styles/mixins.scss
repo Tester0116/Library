@@ -1,0 +1,21 @@
+@mixin flex-center-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 500ms;
+  z-index: 2;
+  color: white;
+  @include flex-center-block;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+}
